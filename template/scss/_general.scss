@@ -1,0 +1,24 @@
+
+/* General */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html, body {
+    height: 100%;
+}
+  
+body {
+    color: var(--color-text);
+    padding: em(15);
+}
+
+section {
+    padding: em(10);
+}
+
+p {
+    margin: em(10) auto; 
+}

@@ -1,0 +1,49 @@
+
+@keyframes openMenu {
+    0% {
+        display: none;
+        width: 0;
+        opacity: 0;
+    }
+    25% {
+        display: block;
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        display: block;
+        width: 50%;
+        opacity: 0;
+    }
+    75% {
+        display: block;
+        width: 100%;
+        opacity: 0.5;
+    }
+    100% {
+        display: block;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        display: block;
+        width: 100%;
+    }
+    50% {
+        display: block;
+        width: 50%;
+    }
+    100% {
+        display: none;
+        width: 0;
+    }
+}
+
+@keyframes animateDash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

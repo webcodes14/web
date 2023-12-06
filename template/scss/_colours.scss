@@ -1,0 +1,23 @@
+
+$color-dark-grey: #272727;
+$color-light-grey: #b9b9b9;
+$color-white: #fff;
+$color-black: #000;
+$color-pink: #d55d5d;
+$color-fb: #1878f1;
+$color-instagram-1: rgba(250,143,33,1);
+$color-instagram-2: rgba(216,45,126,1);
+$color-linked: #0e76b3;
+
+
+:root {
+    --color-dark-grey: #{$color-dark-grey};
+    --color-light-grey: #{$color-light-grey};
+    --color-white: #{$color-white};
+    --color-black: #{$color-black};
+    --color-pink: #{$color-pink};
+    --color-fb: #{$color-fb};
+    --color-instagram-1: #{$color-instagram-1};
+    --color-instagram-2: #{$color-instagram-2};
+    --color-linked: #{$color-linked};
+}
