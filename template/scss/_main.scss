@@ -24,7 +24,6 @@ main {
 .intro h3 {
     margin-top: em(30);
     color: var(--color-light-grey);
-    text-align: justify;
     font-size: calc(4vw + 10px);
 }
 
@@ -50,5 +49,11 @@ main {
 
     .intro h3 {
         font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: em(25) em(15);
     }
 }

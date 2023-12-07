@@ -2,6 +2,17 @@
 
 
 $(function() {
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+            $(".desktop, .bg-close-menu").addClass("bg-on-scroll");
+        } else {
+            $(".desktop, .bg-close-menu").removeClass("bg-on-scroll");
+        }
+    });
+
+
     $(".navbar-mobile").on("click", ".navbar-open, .navbar-close", function() {
         $(".navbar-collapse").toggleClass("active");
         $(".navbar-collapse").find(".social-nav-active").removeClass("social-nav-active");
@@ -35,6 +46,7 @@ $(function() {
             $(this).parent().removeClass().addClass("theme-light");
         }
     });
+
 
 
     changeLink(".navbar-mobile", ".navbar-nav > li a");
