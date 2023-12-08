@@ -1,6 +1,5 @@
 
 main {
-    max-width: 1200px;
     margin: em(60) auto 0;
 }
 
@@ -28,8 +27,40 @@ main {
 }
 
 .intro picture img {
-    max-width: 100%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 0 50px;
     filter: drop-shadow(0 0 5px var(--color-black));
+}
+
+.intro .intro-images {
+    position: relative;
+}
+
+.intro .intro-images .social-nav {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro .intro-images .social-nav li {
+    font-size: 180%;
+}
+
+.fa-facebook {
+    color: var(--color-fb);
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, var(--color-instagram-1) 0%, var(--color-instagram-2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+    color: var(--color-linked);
 }
 
 @media screen and (min-width: 768px) {
@@ -42,7 +73,45 @@ main {
     }
 }
 
+@media screen and (min-width: 480px) {
+    .intro .intro-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .intro-images .social-nav li:nth-of-type(2) {
+        margin: em(15) auto;
+    }
+
+    .intro .intro-images .social-nav {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 768px;
+    }
+
+    .intro > div {
+        display: flex;
+        align-items: center;
+        margin-top: -200px;
+    }
+
+    .intro h3, .intro .intro-images {
+        width: 50%;
+    }
+}
+
 @media screen and (min-width: 992px) {
+    main {
+        max-width: 992px;
+    }
+
     .intro h1 {
         font-size: 800%
     }
@@ -50,10 +119,27 @@ main {
     .intro h3 {
         font-size: 200%;
     }
+
+    .intro > div {
+        margin-top: -270px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     main {
-        padding: em(25) em(15);
+        max-width: 1200px;
+        padding: em(25) 0;
+    }
+
+    .intro > div {
+        margin-top: -240px;
+    }
+
+    .intro h3 {
+        width: 40%;
+    }
+
+    .intro .intro-images {
+        width: 60%;
     }
 }
